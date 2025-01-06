@@ -1,10 +1,3 @@
-# [cosmiCDust miked](https://webmural.com/cosmicdust)
+# [silent shout :cd: mural](https://webmural.com/silentshout)
 
-* Do
-* Re
-* Mi
-* Fa
-* So
-* La
-* Ti
-
+> just want your music&hellip;
