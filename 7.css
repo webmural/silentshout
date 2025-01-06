@@ -3,29 +3,11 @@
 
 /* play. */
 
-[class] {
-  --do: 0deg;
-  --re: calc(360deg / 7);
-  --mi: calc(720deg / 7);
-  --fa: calc(1080deg / 7);
-  --so: calc(-1080deg / 7);
-  --la: calc(-720deg / 7);
-  --ti: calc(-360deg / 7);
-}
-
-/* 
-:nth-child(1n) { --tape-filter: hue-rotate(var(--do)) }
-:nth-child(2n) { --tape-filter: hue-rotate(var(--re)) }
-:nth-child(3n) { --tape-filter: hue-rotate(var(--mi)) }
-:nth-child(4n) { --tape-filter: hue-rotate(var(--fa)) }
-:nth-child(5n) { --tape-filter: hue-rotate(var(--so)) }
-:nth-child(6n) { --tape-filter: hue-rotate(var(--la)) }
-:nth-child(7n) { --tape-filter: hue-rotate(var(--ti)) }
- */
-
 :root {
-  --tape-play: gold;
-  --tape-remix: linear-gradient(plum, violet, deepskyblue, hotpink, salmon, turquoise, fuchsia, plum);
+  --tape-loud: dodgerblue;
+  --tape-play: #a7e;
+  --tape-bluv: deepskyblue; 
+  --tape-blaq: midnightblue;
 }
 
 ::selection {
@@ -40,8 +22,8 @@
 }
 
 :focus {
-  box-shadow: 0 0 1ex 1ex fuchsia;
-  outline: thick dotted indigo;
+  box-shadow: 0 0 1ex 1ex #a7e;
+  outline: thick dotted skyblue;
   text-decoration-style: solid;
 }
 
@@ -61,7 +43,7 @@ html {
 body {
   margin: 0;
   overflow-wrap: anywhere;
-  text-shadow: 1vw 1vh 1pt plum;
+  text-shadow: 1vw 1vh 1pt deepskyblue;
 }
 
 article {
@@ -72,7 +54,9 @@ article {
 }
 
 nav {
+  align-items: flex-end;
   display: flex;
+  flex-flow: column;
   contain: layout;
   font-size: 1.618em;
   margin-block: 1rem;
@@ -81,23 +65,31 @@ nav {
 }
 
 nav a {
-  padding-inline: 1vmax;
+  box-shadow: 23.6vw 38.2vh 1ch;
+  padding: 1ch;
 }
 
 h1 {
   order: 1111;
-  font-family: monospace;
+  font-family: sans-serif;
   margin: 0;
 }
 
-::first-letter {
-  font-family: sans-serif;
-  font-weight: bold;
+cite {
+  font: unset;
 }
 
-@media (orientation: portrait) {
-  nav {
-    clear: both;
-    writing-mode: vertical-rl;
-  }
+svg {
+  border-radius: 100%;
+  padding: 0;
+  width: 61.8vw;
+  flex-basis: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.hoop {
+  align-self: center;
+  border-radius: 100%;
+  contain: layout;
 }
